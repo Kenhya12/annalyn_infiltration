@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class AnnalynsInfiltrationTest {
-    // Tests para canFastAttack 
+    // Tests para canFastAttack
     @Test
     void testCanFastAttack_whenKnightIsAsleep_returnsTrue() {
         boolean knightIsAwake = false;
@@ -20,9 +20,9 @@ public class AnnalynsInfiltrationTest {
         boolean actual = AnnalynsInfiltration.canFastAttack(knightIsAwake);
         assertEquals(expected, actual);
     }
-    
-    //---------------------------------------------------------
-    
+
+    // ---------------------------------------------------------
+
     // Tests para canSpy
     @Test
     void testCanSpy_whenOnlyKnightIsAwake_returnsTrue() {
@@ -39,7 +39,7 @@ public class AnnalynsInfiltrationTest {
         assertEquals(true, AnnalynsInfiltration.canSpy(true, true, true));
     }
 
-    //---------------------------------------------------------
+    // ---------------------------------------------------------
 
     // Tests para canSignalPrisoner
     @Test
@@ -56,8 +56,8 @@ public class AnnalynsInfiltrationTest {
     void testCanSignalPrisoner_whenPrisonerIsAsleep_returnsFalse() {
         assertEquals(false, AnnalynsInfiltration.canSignalPrisoner(false, false));
     }
-    
-    //---------------------------------------------------------
+
+    // ---------------------------------------------------------
 
     // Tests para canFreePrisoner
     @Test

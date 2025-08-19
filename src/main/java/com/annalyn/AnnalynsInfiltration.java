@@ -1,4 +1,5 @@
 package com.annalyn;
+
 // Esta clase contiene los metodos que determinan las acciones de Annalyn en la infiltracion
 // Basado en el enunciado del ejercicio, los metodos son:           
 public class AnnalynsInfiltration {
@@ -17,7 +18,8 @@ public class AnnalynsInfiltration {
     }
 
     // Este metodo determina si Annalyn puede liberar al prisionero
-    public static boolean canFreePrisoner(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake, boolean petDogIsPresent) {
+    public static boolean canFreePrisoner(boolean knightIsAwake, boolean archerIsAwake, boolean prisonerIsAwake,
+            boolean petDogIsPresent) {
         if (petDogIsPresent) {
             return !archerIsAwake;
         } else {
